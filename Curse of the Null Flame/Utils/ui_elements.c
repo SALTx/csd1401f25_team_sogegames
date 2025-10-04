@@ -2,12 +2,23 @@
 #include "../abstraction.h"
 #include "ui_elements.h"
 
+// @todo improve button draw and add click functionality
+
 void drawButton(Button button) {
+	// Set the buttons color
 	CP_Settings_Fill(button.style.regular);
 	if (pointInRect((Point){mouseX, mouseY }, button.properties)) {
 		CP_Settings_Fill(button.style.hover);
+		if (CP_Input_MouseClicked()) {
+			button.callback();
+		}
 	}
 
+	// Set button style
+	CP_Settings_StrokeWeight(button.style.strokeWeight);
+	CP_Settings_Stroke(button.style.strokeColor);
+
+	// Draw the rectangle
 	CP_Graphics_DrawRect(
 		button.properties.position.x,
 		button.properties.position.y,
