@@ -12,7 +12,6 @@ typedef struct {
 } ButtonStyle;
 
 typedef struct {
-	char value[32];
 	CP_Color color;
 	CP_Color alt_color;
 	float size;
@@ -21,6 +20,7 @@ typedef struct {
 // Element definitions
 typedef struct {
 	Quad properties;
+	char value[32];
 	ButtonStyle style;
 	TextStyle text;
 } Button;
