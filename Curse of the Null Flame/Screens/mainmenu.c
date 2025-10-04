@@ -3,6 +3,9 @@
 #include "../Utils/ui_elements.h"
 #include "../Utils/sprite_utils.h"
 
+#include "game_screen.h"
+#include "settings_screen.h"
+
 #include <stdio.h>
 
 // Assets
@@ -22,8 +25,12 @@ CP_Image dungeon_tileset_image;
 SpriteSheet dungeon_tileset;
 Sprite randomSprite;
 
-void sayHello(void) {
-	printf("Hello\n");
+void navigateToGame(void) {
+	CP_Engine_SetNextGameState(game_init, game_update, game_exit);
+}
+
+void navigateToSettings(void) {
+	CP_Engine_SetNextGameState(settings_init, settings_update, settings_exit);
 }
 
 void mainmenu_init(void) {
@@ -55,7 +62,7 @@ void mainmenu_init(void) {
 		"Start",
 		buttonStyle,
 		textStyle,
-		sayHello
+		navigateToGame
 	};
 
 	settingsButton = (Button){
@@ -63,7 +70,7 @@ void mainmenu_init(void) {
 		"Settings",
 		buttonStyle,
 		textStyle,
-		sayHello
+		navigateToSettings
 	};
 
 	exitButton = (Button){
