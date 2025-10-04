@@ -4,7 +4,10 @@
 // @todo Add consideration for shape modes
 
 int pointInRect(Point point, Quad rect) {
+	int widthBound = (point.x >= rect.position.x) && (point.x <= (rect.position.x + rect.width));
+	int heightBound = (point.y >= rect.position.y) && (point.y <= (rect.position.y + rect.height));
 
+	return (widthBound && heightBound);
 }
 
 int rectInRect(Quad rect1, Quad rect2) {
