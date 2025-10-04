@@ -1,5 +1,6 @@
 #include "cprocessing.h"
 #include "../abstraction.h"
+#include "mainmenu.h"
 
 // Declare assets
 CP_Image digipen_logo;
