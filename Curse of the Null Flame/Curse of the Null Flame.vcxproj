@@ -99,7 +99,9 @@ xcopy "$(SolutionDir)Extern\CProcessing\lib\x64\fmod.dll" "$(OutDir)" /s /r /y /
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="Screens\game_screen.c" />
     <ClCompile Include="Screens\mainmenu.c" />
+    <ClCompile Include="Screens\settings_screen.c" />
     <ClCompile Include="Screens\splash.c" />
     <ClCompile Include="Utils\collision_utils.c" />
     <ClCompile Include="Utils\sprite_utils.c" />
@@ -107,7 +109,9 @@ xcopy "$(SolutionDir)Extern\CProcessing\lib\x64\fmod.dll" "$(OutDir)" /s /r /y /
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="abstraction.h" />
+    <ClInclude Include="Screens\game_screen.h" />
     <ClInclude Include="Screens\mainmenu.h" />
+    <ClInclude Include="Screens\settings_screen.h" />
     <ClInclude Include="Screens\splash.h" />
     <ClInclude Include="Utils\collision_utils.h" />
     <ClInclude Include="Utils\shape_utils.h" />

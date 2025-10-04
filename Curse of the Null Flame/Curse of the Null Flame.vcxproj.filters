@@ -35,6 +35,12 @@
     <ClCompile Include="Utils\sprite_utils.c">
       <Filter>Utils</Filter>
     </ClCompile>
+    <ClCompile Include="Screens\game_screen.c">
+      <Filter>Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\settings_screen.c">
+      <Filter>Screens</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="abstraction.h">
@@ -56,6 +62,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Utils\sprite_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\game_screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\settings_screen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
