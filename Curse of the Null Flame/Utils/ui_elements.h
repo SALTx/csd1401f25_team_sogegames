@@ -27,6 +27,31 @@ typedef struct {
 	FunctionPtr callback;
 } Button;
 
+// A couple of untested UI elements, they will have the same style for now until after they work
+// @todo add customizability
+
+typedef struct {
+	Point position;
+	int* value; // Pointer to an actual value (like a toggle in settings)
+	FunctionPtr callback; // Called every toggle
+} CheckBox;
+
+typedef struct {
+	Quad properties;
+	float min;
+	float max;
+	float* value;
+	FunctionPtr callback; // Called when value changes
+} Slider;
+
+typedef struct {
+	Quad properties;
+	char value[64]; // or 128, see if the bigger number needed
+	int isFocused; // 0 no, 1 yes // @todo find a way to have only one active at a time
+	TextStyle text;
+	FunctionPtr callback; // Called when value changes at the moment // @todo have it call on submit or button press
+} TextInput;
+
 void drawButton(Button button);
 
 #endif
