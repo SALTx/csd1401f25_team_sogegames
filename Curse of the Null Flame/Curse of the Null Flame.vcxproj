@@ -102,6 +102,7 @@ xcopy "$(SolutionDir)Extern\CProcessing\lib\x64\fmod.dll" "$(OutDir)" /s /r /y /
     <ClCompile Include="Screens\mainmenu.c" />
     <ClCompile Include="Screens\splash.c" />
     <ClCompile Include="Utils\collision_utils.c" />
+    <ClCompile Include="Utils\sprite_utils.c" />
     <ClCompile Include="Utils\ui_elements.c" />
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +111,7 @@ xcopy "$(SolutionDir)Extern\CProcessing\lib\x64\fmod.dll" "$(OutDir)" /s /r /y /
     <ClInclude Include="Screens\splash.h" />
     <ClInclude Include="Utils\collision_utils.h" />
     <ClInclude Include="Utils\shape_utils.h" />
+    <ClInclude Include="Utils\sprite_utils.h" />
     <ClInclude Include="Utils\ui_elements.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

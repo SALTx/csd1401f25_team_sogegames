@@ -32,6 +32,9 @@
     <ClCompile Include="Utils\ui_elements.c">
       <Filter>Utils</Filter>
     </ClCompile>
+    <ClCompile Include="Utils\sprite_utils.c">
+      <Filter>Utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="abstraction.h">
@@ -50,6 +53,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Utils\ui_elements.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\sprite_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
