@@ -21,12 +21,18 @@
     <ClCompile Include="Screens\splash.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Screens\mainmenu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="abstraction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Screens\splash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\mainmenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

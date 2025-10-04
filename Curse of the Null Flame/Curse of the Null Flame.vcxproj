@@ -99,10 +99,12 @@ xcopy "$(SolutionDir)Extern\CProcessing\lib\x64\fmod.dll" "$(OutDir)" /s /r /y /
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="Screens\mainmenu.c" />
     <ClCompile Include="Screens\splash.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="abstraction.h" />
+    <ClInclude Include="Screens\mainmenu.h" />
     <ClInclude Include="Screens\splash.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
