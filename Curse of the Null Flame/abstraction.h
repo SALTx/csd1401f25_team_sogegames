@@ -10,6 +10,9 @@
 #define BLUE CP_Color_Create(0, 0, 255, 255)
 #define YELLOW CP_Color_Create(255, 255, 0, 255)
 
+// Input
+#define mouseX CP_Input_GetMouseX()
+#define mouseY CP_Input_GetMouseY()
 
 // Window
 #define WIDTH CP_System_GetWindowWidth()
