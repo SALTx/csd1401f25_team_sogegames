@@ -9,20 +9,25 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Screens">
+      <UniqueIdentifier>{960b3abe-c97c-4351-b6f7-804706ade5d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{557bef87-dbc6-484b-a66b-0ae9db0b3459}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Screens\splash.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Screens\mainmenu.c">
-      <Filter>Source Files</Filter>
+      <Filter>Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\splash.c">
+      <Filter>Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\collision_utils.c">
+      <Filter>Utils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -33,6 +38,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Screens\mainmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\collision_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\shape_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
