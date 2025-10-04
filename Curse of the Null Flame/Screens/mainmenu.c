@@ -2,16 +2,23 @@
 #include "../abstraction.h"
 #include "../Utils/ui_elements.h"
 
+#include <stdio.h>
+
 // Assets
 CP_Font font;
 
 // Globals
-ButtonStyle buttonStyle;
+ButtonStyle buttonStyle; // This will be the default style
 TextStyle textStyle;
 
 // Buttons
+Button startButton;
+Button settingsButton;
 Button exitButton;
 
+void sayHello(void) {
+	printf("Hello\n");
+}
 
 void mainmenu_init(void) {
 	// Set shape rules
@@ -22,21 +29,35 @@ void mainmenu_init(void) {
 	font = CP_Font_Load("Assets/Fonts/Exo2-Regular.ttf");
 
 	// Set button styles
-	buttonStyle = (ButtonStyle){ RED, GREEN, BLUE, 0.0f };
-	textStyle = (TextStyle){ "Exit", BLACK, WHITE, 36.0f };
+	buttonStyle = (ButtonStyle){ RED, GREEN, BLUE, 2.0f };
+	textStyle = (TextStyle){ BLACK, WHITE, 36.0f };
 
-	// Set exit button
-	exitButton = (Button){
-		(Quad) { 200, 200, 200, 200 },
+	// Set Buttons
+	startButton = (Button){
+		(Quad) { 800, 500, 100, 50 },
+		"Start",
 		buttonStyle,
-		textStyle
+		textStyle,
+		sayHello
+	};
+
+	exitButton = (Button){
+		(Quad) { 800, 600, 100, 50 },
+		"Exit",
+		buttonStyle,
+		textStyle,
+		CP_Engine_Terminate
 	};
 
 }
 
 void mainmenu_update(void) {
+	// Background
 	CP_Graphics_ClearBackground(CP_Color_Create(0, 255, 0, 255));
 
+
+	// Buttons
+	drawButton(startButton);
 	drawButton(exitButton);
 }
 
