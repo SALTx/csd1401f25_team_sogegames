@@ -11,7 +11,7 @@ void splash_init(void) {
 }
 
 void splash_update(void) {
-	CP_Graphics_ClearBackground(BLACK);
+	CP_Graphics_ClearBackground(WHITE);
 
 	// Draw the digipen logo
 	CP_Image_Draw(digipen_logo, WIDTH / 2, HEIGHT / 2, CP_Image_GetWidth(digipen_logo), CP_Image_GetHeight(digipen_logo), digipen_logo_alpha++);

@@ -52,6 +52,16 @@ typedef struct {
 	FunctionPtr callback; // Called when value changes at the moment // @todo have it call on submit or button press
 } TextInput;
 
+typedef struct {
+	Quad properties;
+	float min, max;
+	float* value;
+	CP_Color color;
+	CP_Color backgroundColor;
+} ProgressBar;
+
 void drawButton(Button button);
+void drawCheckbox(CheckBox box);
+void drawProgressBar(ProgressBar bar);
 
 #endif

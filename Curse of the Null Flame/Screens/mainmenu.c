@@ -85,13 +85,13 @@ void mainmenu_init(void) {
 
 void mainmenu_update(void) {
 	// Background
-	CP_Graphics_ClearBackground(CP_Color_Create(255, 255, 255, 255));
+	CP_Graphics_ClearBackground(CP_Color_Create(255, 255, 255, 128));
 	
 	// new background
 	int scale = 100;
 	for (int i = 0; i < WIDTH; i += scale) {
 		for (int j = 0; j < HEIGHT; j += scale) {
-			drawSprite(randomSprite, (Quad) { i, j, scale, scale }, 128);
+			drawSprite(randomSprite, (Quad) { i, j, scale, scale }, 1, 128);
 		}
 	}
 	

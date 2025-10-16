@@ -19,6 +19,6 @@ typedef struct {
 	int column;
 } Sprite;
 
-void drawSprite(Sprite sprite, Quad properties, int alpha);
+void drawSprite(Sprite sprite, Quad properties, int facingDirection, int alpha);
 
 #endif // SPRITE_UTILS_H

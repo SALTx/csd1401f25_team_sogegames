@@ -15,6 +15,9 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="Levels">
+      <UniqueIdentifier>{5f59b3ff-08e2-4b20-b336-09b43443a3db}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c">
@@ -40,6 +43,12 @@
     </ClCompile>
     <ClCompile Include="Screens\settings_screen.c">
       <Filter>Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\game_utils.c">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="config.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +77,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Screens\settings_screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\game_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

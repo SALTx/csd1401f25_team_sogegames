@@ -11,8 +11,9 @@ int main(void)
 	// Essential configuration
 	CP_System_SetWindowSize(1600, 900);
 	CP_System_SetFrameRate(60.0f); // Set the framerate to 60 FPS for consistency
+	CP_System_SetWindowTitle("Curse of the Null FLame");
 
 	CP_Engine_SetNextGameState(splash_init, splash_update, splash_exit);
-	CP_Engine_Run(1);
+	CP_Engine_Run(0);
 	return 0;
 }
