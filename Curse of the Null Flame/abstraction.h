@@ -5,6 +5,7 @@
 #define GAME_NAME "Curse of the Null Flame"
 
 // Colors
+#define Color CP_Color_Create
 #define BLACK CP_Color_Create(0, 0, 0, 255)
 #define WHITE CP_Color_Create(255, 255, 255, 255)
 

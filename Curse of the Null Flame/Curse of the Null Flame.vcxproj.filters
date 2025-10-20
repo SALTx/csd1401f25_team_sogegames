@@ -50,6 +50,18 @@
     <ClCompile Include="config.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Levels\level1.c">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\level3.c">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\level2.c">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\credits_screen.c">
+      <Filter>Screens</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="abstraction.h">
@@ -83,6 +95,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\level1.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\level3.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\level2.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\credits_screen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

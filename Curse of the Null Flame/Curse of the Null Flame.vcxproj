@@ -99,7 +99,11 @@ xcopy "$(SolutionDir)Extern\CProcessing\lib\x64\fmod.dll" "$(OutDir)" /s /r /y /
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="config.c" />
+    <ClCompile Include="Levels\level1.c" />
+    <ClCompile Include="Levels\level2.c" />
+    <ClCompile Include="Levels\level3.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="Screens\credits_screen.c" />
     <ClCompile Include="Screens\game_screen.c" />
     <ClCompile Include="Screens\mainmenu.c" />
     <ClCompile Include="Screens\settings_screen.c" />
@@ -112,6 +116,10 @@ xcopy "$(SolutionDir)Extern\CProcessing\lib\x64\fmod.dll" "$(OutDir)" /s /r /y /
   <ItemGroup>
     <ClInclude Include="abstraction.h" />
     <ClInclude Include="config.h" />
+    <ClInclude Include="Levels\level1.h" />
+    <ClInclude Include="Levels\level2.h" />
+    <ClInclude Include="Levels\level3.h" />
+    <ClInclude Include="Screens\credits_screen.h" />
     <ClInclude Include="Screens\game_screen.h" />
     <ClInclude Include="Screens\mainmenu.h" />
     <ClInclude Include="Screens\settings_screen.h" />

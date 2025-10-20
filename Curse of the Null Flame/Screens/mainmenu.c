@@ -5,6 +5,7 @@
 
 #include "game_screen.h"
 #include "settings_screen.h"
+#include "credits_screen.h";
 
 #include <stdio.h>
 
@@ -18,6 +19,7 @@ TextStyle textStyle; // This will be the default text style for buttons
 // Buttons
 Button startButton;
 Button settingsButton;
+Button creditsButton;
 Button exitButton;
 
 // Sprite testing
@@ -27,6 +29,10 @@ Sprite randomSprite;
 
 void navigateToGame(void) {
 	CP_Engine_SetNextGameState(game_init, game_update, game_exit);
+}
+
+navigateToCredits(void) {
+	CP_Engine_SetNextGameState(credits_init, credits_update, credits_exit);
 }
 
 void navigateToSettings(void) {
@@ -53,7 +59,8 @@ void mainmenu_init(void) {
 	randomSprite = (Sprite){ dungeon_tileset, 1, 0 };
 
 	// Set button styles
-	buttonStyle = (ButtonStyle){ RED, GREEN, BLUE, 2.0f };
+	buttonStyle = (ButtonStyle){ Color(138, 85, 12, 255), Color(117, 72, 11, 255), BLACK, 1.0f};
+	// regular, hover, stroke, stroke weight
 	textStyle = (TextStyle){ BLACK, WHITE, 16.0f };
 
 	// Set Buttons
@@ -73,8 +80,16 @@ void mainmenu_init(void) {
 		navigateToSettings
 	};
 
-	exitButton = (Button){
+	creditsButton = (Button){
 		(Quad) { 725, 600, 150, 75 },
+		"Credits",
+		buttonStyle,
+		textStyle,
+		navigateToCredits,
+	};
+
+	exitButton = (Button){
+		(Quad) { 725, 700, 150, 75 },
 		"Exit",
 		buttonStyle,
 		textStyle,
@@ -103,6 +118,7 @@ void mainmenu_update(void) {
 	// Buttons
 	drawButton(startButton);
 	drawButton(settingsButton);
+	drawButton(creditsButton);
 	drawButton(exitButton);
 }
 

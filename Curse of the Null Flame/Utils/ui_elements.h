@@ -63,5 +63,6 @@ typedef struct {
 void drawButton(Button button);
 void drawCheckbox(CheckBox box);
 void drawProgressBar(ProgressBar bar);
+void drawGameUI(void);
 
 #endif
